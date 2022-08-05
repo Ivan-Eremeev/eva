@@ -64,7 +64,7 @@ block content
         .wrapper 
           .whatget__row 
             .whatget__content 
-              .whatget__title.title Торгуй по стратегии проверенной временем с крипто-ботом Eva
+              h2.whatget__title.title Торгуй по стратегии проверенной временем с крипто-ботом Eva
               .whatget__text Использование роботов для торговли отличный способ инвестирования для новичков и профессионалов
             .whatget__items 
               .whatget__item 
@@ -85,6 +85,30 @@ block content
               .whatget__item 
                 .whatget__item-title Диверсификация
                 .whatget__item-text Робот торгует одновременно несколькими крипто-монетами
+              
+          // callback
+          .callback
+            .callback__container 
+              .callback__inner 
+                .callback__title Оставить заявку на звонок
+                .callback__text Оставте заявку, наш партнер свяжется с Вами и расскажет подробнее
+                form(action="#").callback__form 
+                  .row 
+                    .callback__col 
+                      .callback__input 
+                        input(type="text", name="name" maxlengh="30" required)
+                        .callback__label Ваше имя
+                    .callback__col 
+                      .callback__input 
+                        input(type="text", name="tel" required)
+                        .callback__label Ваш телефон
+                    .callback__col.callback__col--btn
+                      button(type="submit").callback__btn.btn Отправить
+                        img(src="img/link_arrow.svg", alt="")
+                .callback__ps Оставляя завку, Вы соглашаетесь на 
+                  a(href="#") политику обработки персональной информации
+          // /callback
+
       // /whatget
 
     include core/footer.pug

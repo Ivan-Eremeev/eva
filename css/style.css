@@ -242,6 +242,7 @@ body.lock {
   border: none;
   outline: none;
   font-size: 1.3125em;
+  color: #fff;
   text-align: center;
   cursor: pointer;
   -webkit-user-select: none;
@@ -415,7 +416,7 @@ body.lock {
 /* whatget */
 .whatget {
   padding-top: 6.4em;
-  padding-bottom: 7.5em;
+  padding-bottom: 17.5em;
   background-image: url(../img/whatget_bg.png);
   background-size: cover;
   background-position: top left;
@@ -429,6 +430,7 @@ body.lock {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 7.5em;
 }
 .whatget__content {
   max-width: 54em;
@@ -482,5 +484,114 @@ body.lock {
 }
 
 /* /whatget */
+/* callback */
+.callback__container {
+  padding: 1.1875em 1.5em;
+  background: -o-linear-gradient(354.21deg, rgba(38, 232, 210, 0.15) 0%, rgba(78, 50, 231, 0.15) 100%);
+  background: linear-gradient(95.79deg, rgba(38, 232, 210, 0.15) 0%, rgba(78, 50, 231, 0.15) 100%);
+}
+.callback__inner {
+  padding: 4.0625em 7.1875em 5.9em;
+  border: 0.25em solid rgba(255, 255, 255, 0.1);
+}
+.callback__title {
+  font-size: 2.625em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.callback__text {
+  font-size: 1.3125em;
+  line-height: 1.4em;
+  margin-bottom: 2.7em;
+}
+.callback__form {
+  margin-bottom: 4.3em;
+}
+.callback__form > .row {
+  margin-left: -6.75em;
+  margin-top: -3em;
+}
+.callback__form > .row > * {
+  padding-left: 6.75em;
+  padding-top: 3em;
+}
+.callback__col {
+  width: 33.3333333333%;
+}
+@media screen and (max-width: 768px) {
+  .callback__col {
+    width: 100%;
+  }
+}
+.callback__input {
+  position: relative;
+}
+.callback__input input {
+  width: 100%;
+  height: 3em;
+  background: transparent;
+  border: none;
+  font-size: 1.625em;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.callback__input input:hover {
+  border-color: #fff;
+}
+.callback__input input:focus {
+  border-color: #fff;
+}
+.callback__input input:focus ~ .callback__label {
+  font-size: 0.8em;
+  top: -0.3em;
+}
+.callback__input input:valid {
+  border-color: #fff;
+}
+.callback__input input:valid ~ .callback__label {
+  font-size: 0.8em;
+  top: -0.3em;
+}
+.callback__label {
+  font-size: 1.625em;
+  position: absolute;
+  top: 0.8em;
+  left: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.callback__btn {
+  width: 100%;
+  height: 100%;
+}
+.callback__ps {
+  font-size: 1em;
+}
+.callback__ps a {
+  border-bottom: 1px solid #fff;
+}
+.callback__ps a:hover {
+  color: #4E32E7;
+  border-color: #4E32E7;
+}
+@media (max-width: 768px) {
+  .callback__title {
+    font-size: 2.5em;
+  }
+  .callback__inner {
+    padding: 2em;
+  }
+  .callback__col--btn {
+    padding-top: 6em !important;
+  }
+}
+
+/* /callback */
 /* footer */
 /* /footer */

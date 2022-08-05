@@ -1,7 +1,7 @@
 /* whatget */
 .whatget { 
   padding-top: 6.4em;
-  padding-bottom: 7.5em;
+  padding-bottom: 17.5em;
   background-image: url(../img/whatget_bg.png);
   background-size: cover;
   background-position: top left;
@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 7.5em;
   }
   &__content {
     max-width: 54em;
