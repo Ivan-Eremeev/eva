@@ -1,0 +1,42 @@
+/* welcome */
+.welcome { 
+  display: flex;
+  align-items: flex-end;
+  height: 1080px;
+  min-height: 100vh;
+  padding-top: 16em;
+  padding-bottom: 11.25em;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 4.6em;
+    border-bottom: 0.25em solid rgba(255, 255, 255, 0.1);
+  }
+  &__title {
+    max-width: 11em;
+  }
+  &__content {
+    max-width: 32.5em;
+  }
+  &__text {
+    font-size: 1.3125em;
+    line-height: 1.6em;
+    margin-bottom: 2em;
+  }
+  &__btn {
+    
+  }
+  @media (max-width: $break_sm) {
+    padding-bottom: 8em;
+    &__title {
+      margin-bottom: 0.7em;
+    }
+    &__text {
+      margin-bottom: 3em;
+    }
+  }
+}
+/* /welcome */
