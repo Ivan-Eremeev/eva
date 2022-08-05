@@ -294,6 +294,7 @@ body.lock {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  height: 1080px;
   min-height: 100vh;
   padding-top: 16em;
   padding-bottom: 11.25em;
@@ -330,10 +331,17 @@ body.lock {
     padding-bottom: 8em;
   }
   .welcome__title {
+    max-width: none;
     margin-bottom: 0.7em;
   }
+  .welcome__content {
+    max-width: none;
+  }
   .welcome__text {
-    margin-bottom: 3em;
+    margin-bottom: 4em;
+  }
+  .welcome__btn .btn {
+    width: 100%;
   }
 }
 
@@ -399,7 +407,7 @@ body.lock {
 }
 @media (max-width: 768px) {
   .advantages {
-    padding-top: 5em;
+    padding-top: 7em;
     padding-bottom: 5em;
     background-position: top right -31.25em;
   }
@@ -475,7 +483,7 @@ body.lock {
 @media (max-width: 768px) {
   .whatget {
     padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 8em;
   }
   .whatget__content {
     margin-bottom: 7em;
@@ -592,5 +600,43 @@ body.lock {
 }
 
 /* /callback */
+/* guarantees */
+.guarantees {
+  padding-top: 6.3em;
+  padding-bottom: 17.5em;
+  background-image: url(../img/guarantees_bg.png);
+  background-size: cover;
+}
+.guarantees__content {
+  max-width: 47.5em;
+}
+.guarantees__title {
+  margin-bottom: 0.5em;
+}
+.guarantees__sub {
+  font-size: 1.625em;
+  line-height: 1.4em;
+  padding-bottom: 1.8em;
+  border-bottom: 0.25em solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2em;
+}
+.guarantees__text {
+  font-size: 1.3125em;
+  line-height: 1.4em;
+  margin-bottom: 1.8em;
+}
+@media (max-width: 768px) {
+  .guarantees {
+    padding-bottom: 7em;
+  }
+  .guarantees__text {
+    margin-bottom: 4em;
+  }
+  .guarantees__btn .btn {
+    width: 100%;
+  }
+}
+
+/* /guarantees */
 /* footer */
 /* /footer */

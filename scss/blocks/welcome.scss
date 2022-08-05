@@ -2,7 +2,7 @@
 .welcome { 
   display: flex;
   align-items: flex-end;
-  // height: 1080px;
+  height: 1080px;
   min-height: 100vh;
   padding-top: 16em;
   padding-bottom: 11.25em;
@@ -32,10 +32,19 @@
   @media (max-width: $break_sm) {
     padding-bottom: 8em;
     &__title {
+      max-width: none;
       margin-bottom: 0.7em;
     }
+    &__content {
+      max-width: none;
+    }
     &__text {
-      margin-bottom: 3em;
+      margin-bottom: 4em;
+    }
+    &__btn {
+      .btn {
+        width: 100%;
+      }
     }
   }
 }
