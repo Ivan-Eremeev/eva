@@ -16,4 +16,7 @@ window.onload = function () {
     showMaskOnHover: false
   });
 
+  // AOS | Анимация при скролле
+  AOS.init();
+
 }
