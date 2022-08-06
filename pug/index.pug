@@ -92,15 +92,15 @@ block content
               .callback__inner 
                 .callback__title Оставить заявку на звонок
                 .callback__text Оставте заявку, наш партнер свяжется с Вами и расскажет подробнее
-                form(action="#").callback__form 
+                form(action="#" autocomplete="off").callback__form 
                   .row 
                     .callback__col 
                       .callback__input 
-                        input(type="text", name="name" maxlengh="30" required)
+                        input(type="text", name="name" maxlength="30" required)
                         .callback__label Ваше имя
                     .callback__col 
                       .callback__input 
-                        input(type="text", name="tel" required)
+                        input(type="text", name="tel" required).js-mask-tel
                         .callback__label Ваш телефон
                     .callback__col.callback__col--btn
                       button(type="submit").callback__btn.btn Отправить
@@ -112,10 +112,10 @@ block content
       // /whatget
 
       // guarantees
-      .guarantees
+      section.guarantees
         .wrapper 
           .guarantees__content 
-            .guarantees__title.title Надежный брокер - залог сохранности депозита
+            h2.guarantees__title.title Надежный брокер - залог сохранности депозита
             .guarantees__sub Мы работает только с самими надежными и проверенными брокерами.
             .guarantees__text 
               span Binance 
@@ -124,5 +124,54 @@ block content
               .btn Открыть счёт
                 img(src="img/link_arrow.svg", alt="")
       // /guarantees
+
+      // money
+      section.money
+        .wrapper 
+          .money__content 
+            h2.money__title.title Ваши деньги остаются на вашем счете
+            .money__text Мы НЕ берем деньги в управление на свои счета, вы открываете счет у брокера, а крипто-боту предоставляете только возможность совершать торговые операции на своем счете.
+      // /money
+
+      // about
+      section.about
+        .wrapper 
+          .about__flex 
+            .about__left 
+              h2.about__title.title Роботы нашей компании зарабатывают деньги с 2019 года.
+              .about__text Magnum SK – компания, которая начала свой пусть с Forex роботов еще в 2019 году и преуспев в этом перенесла проверенные и надежные инструменты на крипто рынок.
+            .about__right 
+              .about__subtitle Форекс робот Archie PRO уже 3 года радует своих клиентов достойной прибылью.
+              .about__subtext Посмотрите независимый мониторинг некоторых счетов:
+              .about__items 
+                a(href="#").about__item 
+                  .about__name Archie PRO 
+                  .about__date с ноября 2019
+                a(href="#").about__item 
+                  .about__name Archie PRO 
+                  .about__date с марта 2020
+                a(href="#").about__item 
+                  .about__name Archie PRO 
+                  .about__date с февраля 2020
+      // /about
+
+      // video
+      section.video
+        .video__container#VideoBox 
+          .wrapper 
+            .video__content 
+              h2.video__title.title Крипто-бот Eva - это надежный инструмент инвестирования.
+              ul.video__list
+                li Полностью автоматизирован
+                li Торгует  по 8 крипто-монетам
+                li Авторский алгоритм и индикаторы
+                li Торгует 24/7
+              .video__bottom 
+                .video__btn 
+                  .btn Заказать
+                    img(src="img/link_arrow.svg", alt="")
+                .video__price 400 USD 
+                  span / год
+      // /video
 
     include core/footer.pug

@@ -7,7 +7,7 @@
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
 $max-width: 102.5em; // Максимальная ширина контейнера
-$gutter: 1.25em; // Расстояние между колонками
+$gutter: 2.5em; // Расстояние между колонками
 $offset: 1.875em; // Поля контейнера
 $offset-sm: 0.9375em; // Поля контейнера на мобилке
 // Брэйкпоинты
@@ -27,16 +27,13 @@ $primaryColor: #4E32E7;
 
 // Подключение файлов
 @import 'blocks/settings';
-// @import 'blocks/template';
-// @import 'blocks/popup';
-// @import 'blocks/tabs';
-// @import 'blocks/accordion';
 @import 'blocks/header';
 @import 'blocks/welcome';
 @import 'blocks/advantages';
 @import 'blocks/whatget';
 @import 'blocks/callback';
 @import 'blocks/guarantees';
-
+@import 'blocks/money';
+@import 'blocks/about';
+@import 'blocks/video';
 @import 'blocks/footer';
-// @import 'blocks/menu';

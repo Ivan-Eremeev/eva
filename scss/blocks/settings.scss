@@ -100,5 +100,9 @@ body {
       transform: translate(0.3125em,0);
     }
   }
+  @media (max-width: $break_sm) {
+    font-size: 1.8em;
+  }
 }
+
 /* /settings */
