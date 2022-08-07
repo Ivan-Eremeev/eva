@@ -801,7 +801,6 @@ body.lock {
   .video__container {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-position: top right;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .video__container > div:nth-child(1) video {
