@@ -51,15 +51,15 @@
     &__container {
       padding-top: 5em;
       padding-bottom: 5em;
-      background-color: rgba(0,0,0,.5);
-      > div {
-        &:nth-child(1) {
-          video {
-            left: 0 !important;
-            transform: translate(-16em ,-50%) !important;
-          }
-        }
-      }
+      // background-color: rgba(0,0,0,.5);
+      // > div {
+      //   &:nth-child(1) {
+      //     video {
+      //       left: 0 !important;
+      //       transform: translate(-16em ,-50%) !important;
+      //     }
+      //   }
+      // }
     }
     &__title {
       margin-bottom: 8em;

@@ -801,13 +801,6 @@ body.lock {
   .video__container {
     padding-top: 5em;
     padding-bottom: 5em;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .video__container > div:nth-child(1) video {
-    left: 0 !important;
-    -webkit-transform: translate(-16em, -50%) !important;
-    -ms-transform: translate(-16em, -50%) !important;
-    transform: translate(-16em, -50%) !important;
   }
   .video__title {
     margin-bottom: 8em;
