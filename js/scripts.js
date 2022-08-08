@@ -1,12 +1,20 @@
 window.onload = function () {
 
   // Vide | Видео на фоне
-  $('#welcomeVideo').vide({
+  const welcomeVideo = $('#welcomeVideo').vide({
     mp4: 'video/main_bg_x264.mp4',
+    poster: 'video/main_bg_x264.jpg'
+  }, {
+    posterType: 'jpg',
+    muted: false,
   });
 
   const videoBox = $('#VideoBox').vide({
     mp4: 'video/box_bg_x264.mp4',
+    poster: 'video/box_bg_x264.jpg'
+  }, {
+    posterType: 'jpg',
+    muted: false,
   });
 
   // JQueryInputmask | Маска для поля ввода телефона
