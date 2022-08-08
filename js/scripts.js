@@ -6,7 +6,6 @@ window.onload = function () {
     poster: 'video/main_bg_x264.jpg'
   }, {
     posterType: 'jpg',
-    muted: true,
   });
 
   const videoBox = $('#VideoBox').vide({
@@ -14,7 +13,6 @@ window.onload = function () {
     poster: 'video/box_bg_x264.jpg'
   }, {
     posterType: 'jpg',
-    muted: true,
   });
 
   // JQueryInputmask | Маска для поля ввода телефона
