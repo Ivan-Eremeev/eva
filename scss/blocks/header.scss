@@ -5,9 +5,13 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   &__logo {
     display: block;
     width: 15em;
+  }
+  &__logo-text {
+    margin-top: 1em;
   }
 }
 /* /header */

@@ -285,10 +285,14 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .header__logo {
   display: block;
   width: 15em;
+}
+.header__logo-text {
+  margin-top: 1em;
 }
 
 /* /header */
@@ -867,6 +871,9 @@ body.lock {
 .footer__logo {
   display: block;
   width: 15em;
+}
+.footer__logo-text {
+  margin-top: 1em;
 }
 .footer__list {
   padding-top: 1.3em;
